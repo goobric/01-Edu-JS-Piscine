@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Superhero API</h1>
+
+    <!-- Search input -->
+    <label for="search">Search:</label>
+    <input type="text" id="search" placeholder="Enter hero name">
+
+    <!-- Page size selection -->
+    <label for="page-size">Page Size:</label>
+    <select id="page-size">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="563">All</option>
+    </select>
+    <label for="page-select">Page:</label>
+    <select id="page-select" onchange="handlePageChange()"></select>
+
+
+    <!-- Table for displaying superhero data -->
+    <table id="superhero-table">
+        <!-- Table headers -->
+        <thead>
+            <tr>
+                <th class="table-header" data-sort="number">Row</th>
+                <th class="table-header" data-sort="image">Icon</th>
+                <th class="table-header" data-sort="name">Name</th>
+                <th class="table-header" data-sort="fullName">Full Name</th>
+                <th class="table-header" data-sort="powerstats">Intelligence</th>
+                <th class="table-header" data-sort="powerstats">Strength</th>
+                <th class="table-header" data-sort="powerstats">Speed</th>
+                <th class="table-header" data-sort="powerstats">Durability</th>
+                <th class="table-header" data-sort="powerstats">Power</th>
+                <th class="table-header" data-sort="powerstats">Combat</th>
+                <th class="table-header" data-sort="race">Race</th>
+                <th class="table-header" data-sort="gender">Gender</th>
+                <th class="table-header" data-sort="heigth">Heigth</th>
+                <th class="table-header" data-sort="weight">Weight</th>
+                <th class="table-header" data-sort="placeOfBirth">Place of Birth</th>
+                <th class="table-header" data-sort="alignment">Alignment</th>
+            </tr>
+        </thead>
+        <!-- Table body will be populated dynamically using JavaScript -->
+        <tbody id="table-body"></tbody>
+    </table>
+<script src="main.js"></script>
+</body>

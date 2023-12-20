@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HNC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="news16.png" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="header">
+        <img src="news100.png" alt="logo" />
+        <h1>Hacker News Clone</h1>
+        <br /><br />
+      </div>
+      <!-- Nav Bar elements controlled by doc.getElByClsNme in JS -->
+      <nav>
+        <ul>
+          <li class="nav-item selected" id="top">Top</li>
+          <li class="nav-item" id="new">New</li>
+          <li class="nav-item" id="best">Best</li>
+          <li class="nav-item" id="show">Show</li>
+          <li class="nav-item" id="ask">Ask</li>
+          <li class="nav-item" id="jobs">Jobs</li>
+          <li class="nav-item" id="poll">Polls</li>
+          <li class="nav-item" id="saved">Saved</li>
+        </ul>
+      </nav>
+      <!-- Content populated by script -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
